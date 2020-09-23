@@ -1,0 +1,9 @@
+USE mysql
+
+CREATE USER 'rbeach'@'localhost' IDENTIFIED BY '123456';
+
+GRANT ALL PRIVILEGES ON *.* TO 'rbeach'@'localhost' WITH GRANT OPTION;
+
+FLUSH PRIVILEGES;
+
+CREATE DATABASE wordpressDB;
